@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Perguntas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h2 {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        li:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+            li::before {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            text-align: right;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .form-label {
+            color: #000;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .form-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Cadastro de Perguntas</h1>
+            <form action="" method="post">
+                <label for="pergunta" class="form-label">Pergunta:</label>
+                <input type="text" id="pergunta" name="pergunta" class="form-input" required>
+                
+                <label for="tipo">Tipo de Pergunta:</label>
+                <select id="tipo" name="tipo" class="form-input" required>
+                    <option value="aberta">Aberta</option>
+                    <option value="fechada">Fechada</option>
+                    <option value="multipla_escolha">Múltipla Escolha</option>
+                    <option value="escala">Escala</option>
+                </select>
+                
+                <label for="opcoes" class="form-label">Opções de Resposta:</label>
+                <input type="text" id="opcoes" name="opcoes" class="form-input" required>
+                
+                <button type="submit" class="form-button">Cadastrar Pergunta</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

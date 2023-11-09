@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Análise de Resultados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h2 {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        li:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilizando o resultado da porcentagem */
+        li::before {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            text-align: right;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .questionario {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .resultado-geral {
+            margin-top: 10px;
+        }
+
+        .resultado-pergunta {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Análise de Resultados</h1>
+    
+    <div class="questionario">
+        <h2>Questionário 1 (Exemplo de respostas das perguntas)</h2>
+        <p>Pergunta 1: Qual é a sua cor favorita?</p>
+        <ul>
+            <li>Opção 1 (Vermelho): <strong>25%</strong></li>
+            <li>Opção 2 (Azul): <strong>50%</strong></li>
+            <li>Opção 3 (Verde): <strong>25%</strong></li>
+        </ul>
+
+        <p>Pergunta 2: Qual é a sua fruta favorita?</p>
+        <ul>
+            <li>Opção 1 (Maçã): <strong>40%</strong></li>
+            <li>Opção 2 (Banana): <strong>30%</strong></li>
+            <li>Opção 3 (Morango): <strong>30%</strong></li>
+        </ul>
+
+        <div class="resultado-geral">
+            <h2>Resultado Geral do Questionário</h2>
+            <p>Total de Respostas: 100</p>
+        </div>
+    </div>
+</body>
+</html>
